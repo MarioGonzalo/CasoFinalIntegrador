@@ -19,8 +19,8 @@ public:
     std::string to_string();
     std::string to_json_string();
     static Variant from_json_string(std::string sjson);
-    typedef Variant (*proc_type)(const std::vector<Variant> &);
 
+    typedef Variant (*proc_type)(const std::vector<Variant> &);
     typedef std::vector<Variant>::const_iterator iter;
     typedef std::map<std::string, Variant> map;
 
@@ -54,6 +54,10 @@ public:
 
 int main() {
     // Your main function code here
+    Variant myVariant;
+    std::string result = myVariant.to_string();
+    // Use the result or do other operations...
 
     return 0;
 }
+
