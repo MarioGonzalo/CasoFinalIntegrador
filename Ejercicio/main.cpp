@@ -10,6 +10,10 @@ struct Entorno;
 
 class Json;
 
+enum variant_type {
+    Symbol, Number, List, Proc, Lambda, Cadena
+};
+
 class Variant {
 public:
     std::string to_string();
@@ -26,11 +30,11 @@ public:
     proc_type proc;
     Entorno *env;
 
-    Variant(variant_type type = Symbol) : type(type), env(0), proc(0) {}
+    Variant(variant_type t = Symbol) : type(t), env(0), proc(0) {}
 
-    Variant(variant_type type, const std::string &val) : type(type), val(val), env(0), proc(0) {}
+    Variant(variant_type t, const std::string &v) : type(t), val(v), env(0), proc(0) {}
 
-    Variant(proc_type proc) : type(Proc), proc(proc), env(0) {}
+    Variant(proc_type p) : proc(p), env(0) {}
 
     std::string to_string() {
         // Provide actual implementation for to_string()
