@@ -3,5 +3,4 @@ project(Ejercicio)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Ejercicio main.cpp
-        cmake-build-debug/json11-master/json11.cpp)
+add_executable(Ejercicio main.cpp)

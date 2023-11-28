@@ -55,12 +55,6 @@ build CMakeFiles/Ejercicio.dir/main.cpp.obj: CXX_COMPILER__Ejercicio_unscanned_D
   OBJECT_DIR = CMakeFiles\Ejercicio.dir
   OBJECT_FILE_DIR = CMakeFiles\Ejercicio.dir
 
-build CMakeFiles/Ejercicio.dir/json11-master/json11.cpp.obj: CXX_COMPILER__Ejercicio_unscanned_Debug C$:/Users/magol/CLionProjects/CasoFinalIntegrador/Ejercicio/cmake-build-debug/json11-master/json11.cpp || cmake_object_order_depends_target_Ejercicio
-  DEP_FILE = CMakeFiles\Ejercicio.dir\json11-master\json11.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Ejercicio.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ejercicio.dir\json11-master
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Ejercicio
@@ -69,7 +63,7 @@ build CMakeFiles/Ejercicio.dir/json11-master/json11.cpp.obj: CXX_COMPILER__Ejerc
 #############################################
 # Link the executable Ejercicio.exe
 
-build Ejercicio.exe: CXX_EXECUTABLE_LINKER__Ejercicio_Debug CMakeFiles/Ejercicio.dir/main.cpp.obj CMakeFiles/Ejercicio.dir/json11-master/json11.cpp.obj
+build Ejercicio.exe: CXX_EXECUTABLE_LINKER__Ejercicio_Debug CMakeFiles/Ejercicio.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Ejercicio.dir
